@@ -16,13 +16,13 @@ This system is designed to detect potential DDoS attacks in real-time using mach
    ```bash
    python3 Store_Data.py
    
-4. **Convert Network Traffic to Flows:**
+3. **Convert Network Traffic to Flows:**
   - Ensure you have network traffic data saved as trafficData.pcap in the data/ directory.
   - Convert the traffic data to network flows:
-  ```bash
-  cicflowmeter -f data/trafficData.pcap -c flows/outputFlows.csv
+      ```bash
+       cicflowmeter -f data/trafficData.pcap -c flows/outputFlows.csv
 
-5. **Run the Main Classification Script:**
+4. **Run the Main Classification Script:**
   ```bash
   python3 main.py
 

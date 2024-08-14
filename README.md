@@ -12,19 +12,19 @@ This system is designed to detect potential DDoS attacks in real-time using mach
 1. **Open WSL Terminal:**
    - This project is configured to run on a WSL (Windows Subsystem for Linux) terminal or an Ubuntu OS.
 
-2. **Run the Data Storage Script:**
+3. **Run the Data Storage Script:**
    ```bash
    python3 Store_Data.py
    
-3. **Convert Network Traffic to Flows:**
-  - Ensure you have network traffic data saved as trafficData.pcap in the data/ directory.
-  - Convert the traffic data to network flows:
-      ```bash
-       cicflowmeter -f data/trafficData.pcap -c flows/outputFlows.csv
+4. **Convert Network Traffic to Flows:**
+    - Ensure you have network traffic data saved as trafficData.pcap in the data/ directory..
+    - Convert the traffic data to network flows:.
+    ```bash
+     cicflowmeter -f data/trafficData.pcap -c flows/outputFlows.csv
 
 4. **Run the Main Classification Script:**
-  ```bash
-  python3 main.py
+   ```bash
+      python3 main.py
 
 bash
 Copy code
